@@ -44,7 +44,7 @@ class GuideProfileSerializer(serializers.ModelSerializer):
     rating = serializers.IntegerField(initial=0.0)
     class Meta:
         model = GuideProfile
-        fields = ('phone_number','rating','profile_pic','bio','latitude','longitude','is_tourist','pricing')
+        fields = ('phone_number','rating','profile_pic','bio','latitude','longitude','is_tourist','pricing','earning')
 
 
 class GuideSerializer(serializers.ModelSerializer):
